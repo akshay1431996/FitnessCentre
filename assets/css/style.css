@@ -1,0 +1,543 @@
+/*For mobile devices*/
+/* @media only screen and (max-width:425px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .wrapper{
+        display:none;
+    }
+
+    header{
+       
+        width: 100%;
+        
+    }
+
+    #brand_logo{
+
+        position: absolute;
+        left: 10%;
+    }
+    
+    #navbarNavAltMarkup{
+        padding-right: 150px;
+    }
+    
+    .navbar{
+        background-color: black;
+    }
+
+    .navbar .navbar-nav a{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 20px;
+    }
+    
+    #navbarNavAltMarkup a{
+        color: white;
+        font-family: "Poppins";
+    }
+
+    #menu-btn span{
+        background-color: white;
+        z-index: 1;
+    }
+    
+    #carouselSlidesOnly{
+        z-index: -99;
+    }
+    
+    #carouselSlidesOnly .carousel-inner .carousel-item img{
+        object-fit:cover;
+        object-position: center;
+        width: 100%;
+        max-height: 700px;
+        margin-bottom: 1rem;
+        filter: brightness(0.4);
+    }
+    
+    #get_strong{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        font-weight: 700;
+        font-style: italic;
+        top: 30%;
+        left: 10%;
+    }
+    
+    #slide_1_para{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        font-size: 23px;
+        font-weight: 400;
+        font-style: italic;
+        top: 40%;
+        left: 10%;
+        font-family: "Poppins";
+    }
+    
+    #carouselSlidesOnly .carousel-inner .carousel-item a{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: italic;
+        top: 65%;
+        left: 10%;
+        background-color: #dd2026;
+        padding: 5px;
+        text-transform: uppercase;
+    }
+    
+    .active{
+        text-decoration: underline;
+        text-decoration-color: red ;
+    }
+    
+    .navbar #navbarNavAltMarkup .navbar-nav a:hover{
+        text-decoration: underline;
+        text-decoration-color: red ;
+    }
+
+} */
+
+/*For Tabs devices*/
+/* @media only screen and (min-width:425px) and (max-width:768px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .wrapper{
+        display:none;
+    }
+
+    header{
+       
+        width: 100%;
+        
+    }
+
+    .left{
+        display: flex;
+        padding-left: 170px;
+    }
+    
+    .left ul li{
+        display: inline;
+    }
+    
+    
+    .left ul li a i{
+        padding: 5px;
+    }
+    
+    .left ul li a{
+        font-size: 14px;
+    }
+    
+    .right{
+        padding-left: 600px;
+    }
+    
+    .right p{
+        font-size: 14px;
+    }
+
+    #brand_logo{
+        position: absolute;
+        left: 10%;
+    }
+    
+    #navbarNavAltMarkup{
+        padding-right: 150px;
+    }
+    
+    .navbar{
+        background-color: black;
+    }
+
+    .navbar .navbar-nav a{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 20px;
+    }
+    
+    #navbarNavAltMarkup a{
+        color: white;
+        font-family: "Poppins";
+    }
+    
+    #carouselSlidesOnly{
+        z-index: -99;
+    }
+    
+    #carouselSlidesOnly .carousel-inner .carousel-item img{
+        object-fit:cover;
+        object-position: center;
+        width: 100%;
+        max-height: 700px;
+        margin-bottom: 1rem;
+        filter: brightness(0.4);
+    }
+    
+    #get_strong{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        font-weight: 700;
+        font-style: italic;
+        top: 30%;
+        left: 10%;
+    }
+    
+    #slide_1_para{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        font-size: 23px;
+        font-weight: 400;
+        font-style: italic;
+        top: 40%;
+        left: 10%;
+        font-family: "Poppins";
+    }
+    
+    #carouselSlidesOnly .carousel-inner .carousel-item a{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: italic;
+        top: 50%;
+        left: 10%;
+        background-color: #dd2026;
+        padding: 5px;
+        text-transform: uppercase;
+    }
+    
+    .active{
+        text-decoration: underline;
+        text-decoration-color: red ;
+    }
+    
+    .navbar #navbarNavAltMarkup .navbar-nav a:hover{
+        text-decoration: underline;
+        text-decoration-color: red ;
+    }
+} */
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    
+    header{
+       
+        width: 100%;
+        
+    }
+    
+    
+    .wrapper{
+        width: 100%;
+        display: flex;
+        background-color: #1b3453;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .left{
+        position: absolute;
+        left: 150px;
+    }
+    
+    .left ul li{
+        display: inline;
+    }
+    
+    
+    .left ul li a i{
+        padding: 5px;
+    }
+    
+    .left ul li a{
+        font-size: 14px;
+    }
+    
+    .right{
+        position: absolute;
+        right: 0;
+    }
+    
+    .right p{
+        font-size: 14px;
+    }
+    
+    #my_account:hover{
+        text-decoration: underline;
+        text-decoration-color: white;
+    }
+    
+    #gym_nearby:hover{
+        text-decoration: underline;
+        text-decoration-color: red;
+    }
+    
+    #social_media_top li{
+        display: inline-block;
+    }
+    
+    #social_media_top li a{
+        color: white;
+        font-size: 14px;
+        font-family: "Poppins";
+    }
+    
+    #brand_logo{
+        position: absolute;
+        left: 150px;
+    }
+    
+    #navbarNavAltMarkup{
+        position: relative;
+        left: 160%;
+    }
+    
+    #main_menu{
+        position: absolute;
+    }
+    
+    .navbar .navbar-nav a{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 20px;
+    }
+    
+    #navbarNavAltMarkup a{
+        color: white;
+        font-family: "Poppins";
+    }
+    
+    #carouselSlidesOnly{
+        z-index: -99;
+    }
+    
+    #carouselSlidesOnly .carousel-inner .carousel-item img{
+        object-fit:cover;
+        object-position: center;
+        width: 100%;
+        max-height: 700px;
+        margin-bottom: 1rem;
+        filter: brightness(0.4);
+    }
+    
+    #get_strong{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        font-weight: 700;
+        font-style: italic;
+        top: 30%;
+        left: 10%;
+    }
+    
+    #slide_1_para{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        font-size: 23px;
+        font-weight: 400;
+        font-style: italic;
+        top: 40%;
+        left: 10%;
+        font-family: "Poppins";
+    }
+    
+    #carouselSlidesOnly .carousel-inner .carousel-item a{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: italic;
+        top: 50%;
+        left: 10%;
+        background-color: #dd2026;
+        padding: 5px;
+        text-transform: uppercase;
+    }
+    
+    .active{
+        text-decoration: underline;
+        text-decoration-color: red ;
+    }
+    
+    .navbar #navbarNavAltMarkup .navbar-nav a:hover{
+        text-decoration: underline;
+        text-decoration-color: red ;
+    }
+
+    #title_gym_class{
+        font-style: italic;
+        color: #163558;
+    }
+
+    #gym_class_div #gym_class_img{
+        position: relative;
+        z-index: -99;
+        bottom: 15%;
+        filter: brightness(0.4);
+    }
+
+    #gym_class_div:hover #gym_class_img{
+        filter: brightness(1);
+        transition: 0.5 ease;
+    }
+
+
+    #gym_class_div #gym_class_category{
+        position: relative;
+        top: 65%;
+        left: 5%;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration-style: none;
+        color: white;
+        background-color: #dd2026;
+        padding: 2px;
+        border-radius: 2px;
+    }
+
+    #gym_class_div #gym_class_title{
+        position: relative;
+        top: 65%;
+        left: 5%;
+        
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 25px;
+        font-weight: 600;
+        
+    }
+
+    #gym_class_div #gym_class_title a{
+        text-decoration-style: none;
+        color: white;
+    }
+
+    #our_blog_card h5{
+        font-style: italic;
+    }
+
+    #our_blog_card h5:hover{
+        color: #dd2026;
+    }
+
+    #our_blog_card img:hover{
+        filter: brightness(0.4);
+        background-image: url("../images/hover_image.png");
+        z-index: 1;
+    }
+
+    #fit_shop #product_list img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #fit_shop #product_list h4{
+        text-transform: uppercase;
+        font-style: italic;
+        color: #1b3453;
+    }
+
+    #fit_shop #product_list p{
+        font-style: italic;
+        color: #dd2026;
+        font-size: 20px;
+    }
+
+    #gym_trainer_div #gym_trainer_name{
+        position: relative;
+        top: 85%;
+        left: 5%;
+        font-size: 23px;
+        color: white;
+        font-weight: 700;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+
+    #gym_trainer_div #gym_trainer_info{
+        position: relative;
+        top: 85%;
+        left: 5%;
+        font-size: 18px;
+    }
+
+    #gym_trainer_div #gym_trainer_info a{
+        color: white;
+    }
+
+    footer{
+        background-color:#1b3453;
+        
+    }
+
+    #working_hours{
+        font-style: italic;
+        font-size: 15px;
+    }
+
+    .timing{
+        background-color: #dd2026;
+        padding: 1px;
+        border-radius: 5px;
+    }
+
+    .closed{
+        background-color: #4c6689;
+        padding: 1px;
+        border-radius: 5px;
+    }
+
+    hr{
+        color: white;
+    }
+
+
+
